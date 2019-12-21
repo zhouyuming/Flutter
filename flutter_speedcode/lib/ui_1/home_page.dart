@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'TravelBean.dart';
+import 'detail_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -80,11 +81,11 @@ class MostPopularWidget extends StatelessWidget {
       itemBuilder: (context, index) {
         var bean = _list[index];
         return GestureDetector(
-          /*onTap: () {
+          onTap: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (context) {
               return DetailPage(bean);
             }));
-          },*/
+          },
           child: Hero(
             tag: bean.url,
             child: Stack(
@@ -149,11 +150,11 @@ class TravelWidget extends StatelessWidget {
       itemBuilder: (context, index) {
         var bean = _list[index];
         return GestureDetector(
-          /*onTap: () {
+          onTap: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (context) {
               return DetailPage(bean);
             }));
-          },*/
+          },
           child: Hero(
             tag: bean.url,
             child: Stack(

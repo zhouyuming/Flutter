@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/ui_1/home_page.dart' as ui_1;
+import 'package:flutter_speedcode/ui_1/home_page.dart' as ui_1;
+import 'package:flutter_speedcode/ui_2/home_page.dart' as ui_2;
+import 'package:flutter_speedcode/ui_3/home_page.dart' as ui_3;
+import 'package:flutter_speedcode/ui_4/home_page.dart' as ui_4;
+
 
 class HomePage extends StatelessWidget {
   @override
@@ -61,7 +65,64 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),  
+              ), 
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => ui_2.HomePage()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 15,
+                    vertical: 20,
+                  ),
+                  child: Text(
+                    "Flutter精美UI系列视频教程-2",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ), 
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => ui_3.HomePage()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 15,
+                    vertical: 20,
+                  ),
+                  child: Text(
+                    "Flutter精美UI系列视频教程-3",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => ui_4.HomePage()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 15,
+                    vertical: 20,
+                  ),
+                  child: Text(
+                    "Flutter精美UI系列视频教程-4",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),  
